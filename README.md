@@ -1,2 +1,2 @@
 # PiedraPapelTijera
-A game for rock, paper, scissors
+A game rock, paper, scissors of WatchOS
