@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1058E0AC23B070CA0030B2CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058E0AB23B070CA0030B2CB /* AppDelegate.swift */; };
+		1058E0AE23B070CA0030B2CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058E0AD23B070CA0030B2CB /* SceneDelegate.swift */; };
+		1058E0B023B070CA0030B2CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058E0AF23B070CA0030B2CB /* ViewController.swift */; };
+		1058E0B323B070CA0030B2CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0B123B070CA0030B2CB /* Main.storyboard */; };
+		1058E0B523B070D00030B2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0B423B070D00030B2CB /* Assets.xcassets */; };
+		1058E0B823B070D00030B2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0B623B070D00030B2CB /* LaunchScreen.storyboard */; };
+		1058E0BD23B070D10030B2CB /* piedraPapelTijera WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1058E0BC23B070D10030B2CB /* piedraPapelTijera WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1058E0C323B070D10030B2CB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0C123B070D10030B2CB /* Interface.storyboard */; };
+		1058E0C523B070D30030B2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0C423B070D30030B2CB /* Assets.xcassets */; };
+		1058E0CC23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1058E0CB23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1058E0D123B070D30030B2CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058E0D023B070D30030B2CB /* InterfaceController.swift */; };
+		1058E0D323B070D30030B2CB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058E0D223B070D30030B2CB /* ExtensionDelegate.swift */; };
+		1058E0D523B070D60030B2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1058E0D423B070D60030B2CB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1058E0BE23B070D10030B2CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1058E0A023B070CA0030B2CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1058E0BB23B070D10030B2CB;
+			remoteInfo = "piedraPapelTijera WatchKit App";
+		};
+		1058E0CD23B070D30030B2CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1058E0A023B070CA0030B2CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1058E0CA23B070D30030B2CB;
+			remoteInfo = "piedraPapelTijera WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1058E0DC23B070D60030B2CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1058E0CC23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1058E0E023B070D60030B2CB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1058E0BD23B070D10030B2CB /* piedraPapelTijera WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058E0A823B070CA0030B2CB /* piedraPapelTijera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piedraPapelTijera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1058E0AB23B070CA0030B2CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1058E0AD23B070CA0030B2CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1058E0AF23B070CA0030B2CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1058E0B223B070CA0030B2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1058E0B423B070D00030B2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1058E0B723B070D00030B2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1058E0B923B070D00030B2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1058E0BC23B070D10030B2CB /* piedraPapelTijera WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "piedraPapelTijera WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1058E0C223B070D10030B2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1058E0C423B070D30030B2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1058E0C623B070D30030B2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1058E0CB23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "piedraPapelTijera WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1058E0D023B070D30030B2CB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1058E0D223B070D30030B2CB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1058E0D423B070D60030B2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1058E0D623B070D60030B2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1058E0A523B070CA0030B2CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1058E0C823B070D30030B2CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058E09F23B070CA0030B2CB = {
+			isa = PBXGroup;
+			children = (
+				1058E0AA23B070CA0030B2CB /* piedraPapelTijera */,
+				1058E0C023B070D10030B2CB /* piedraPapelTijera WatchKit App */,
+				1058E0CF23B070D30030B2CB /* piedraPapelTijera WatchKit Extension */,
+				1058E0A923B070CA0030B2CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1058E0A923B070CA0030B2CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1058E0A823B070CA0030B2CB /* piedraPapelTijera.app */,
+				1058E0BC23B070D10030B2CB /* piedraPapelTijera WatchKit App.app */,
+				1058E0CB23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1058E0AA23B070CA0030B2CB /* piedraPapelTijera */ = {
+			isa = PBXGroup;
+			children = (
+				1058E0AB23B070CA0030B2CB /* AppDelegate.swift */,
+				1058E0AD23B070CA0030B2CB /* SceneDelegate.swift */,
+				1058E0AF23B070CA0030B2CB /* ViewController.swift */,
+				1058E0B123B070CA0030B2CB /* Main.storyboard */,
+				1058E0B423B070D00030B2CB /* Assets.xcassets */,
+				1058E0B623B070D00030B2CB /* LaunchScreen.storyboard */,
+				1058E0B923B070D00030B2CB /* Info.plist */,
+			);
+			path = piedraPapelTijera;
+			sourceTree = "<group>";
+		};
+		1058E0C023B070D10030B2CB /* piedraPapelTijera WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1058E0C123B070D10030B2CB /* Interface.storyboard */,
+				1058E0C423B070D30030B2CB /* Assets.xcassets */,
+				1058E0C623B070D30030B2CB /* Info.plist */,
+			);
+			path = "piedraPapelTijera WatchKit App";
+			sourceTree = "<group>";
+		};
+		1058E0CF23B070D30030B2CB /* piedraPapelTijera WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1058E0D023B070D30030B2CB /* InterfaceController.swift */,
+				1058E0D223B070D30030B2CB /* ExtensionDelegate.swift */,
+				1058E0D423B070D60030B2CB /* Assets.xcassets */,
+				1058E0D623B070D60030B2CB /* Info.plist */,
+			);
+			path = "piedraPapelTijera WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1058E0A723B070CA0030B2CB /* piedraPapelTijera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1058E0E123B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera" */;
+			buildPhases = (
+				1058E0A423B070CA0030B2CB /* Sources */,
+				1058E0A523B070CA0030B2CB /* Frameworks */,
+				1058E0A623B070CA0030B2CB /* Resources */,
+				1058E0E023B070D60030B2CB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1058E0BF23B070D10030B2CB /* PBXTargetDependency */,
+			);
+			name = piedraPapelTijera;
+			productName = piedraPapelTijera;
+			productReference = 1058E0A823B070CA0030B2CB /* piedraPapelTijera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1058E0BB23B070D10030B2CB /* piedraPapelTijera WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1058E0DD23B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera WatchKit App" */;
+			buildPhases = (
+				1058E0BA23B070D10030B2CB /* Resources */,
+				1058E0DC23B070D60030B2CB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1058E0CE23B070D30030B2CB /* PBXTargetDependency */,
+			);
+			name = "piedraPapelTijera WatchKit App";
+			productName = "piedraPapelTijera WatchKit App";
+			productReference = 1058E0BC23B070D10030B2CB /* piedraPapelTijera WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1058E0CA23B070D30030B2CB /* piedraPapelTijera WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1058E0D923B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera WatchKit Extension" */;
+			buildPhases = (
+				1058E0C723B070D30030B2CB /* Sources */,
+				1058E0C823B070D30030B2CB /* Frameworks */,
+				1058E0C923B070D30030B2CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "piedraPapelTijera WatchKit Extension";
+			productName = "piedraPapelTijera WatchKit Extension";
+			productReference = 1058E0CB23B070D30030B2CB /* piedraPapelTijera WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1058E0A023B070CA0030B2CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Armando Carrillo";
+				TargetAttributes = {
+					1058E0A723B070CA0030B2CB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					1058E0BB23B070D10030B2CB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					1058E0CA23B070D30030B2CB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 1058E0A323B070CA0030B2CB /* Build configuration list for PBXProject "piedraPapelTijera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1058E09F23B070CA0030B2CB;
+			productRefGroup = 1058E0A923B070CA0030B2CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1058E0A723B070CA0030B2CB /* piedraPapelTijera */,
+				1058E0BB23B070D10030B2CB /* piedraPapelTijera WatchKit App */,
+				1058E0CA23B070D30030B2CB /* piedraPapelTijera WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1058E0A623B070CA0030B2CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058E0B823B070D00030B2CB /* LaunchScreen.storyboard in Resources */,
+				1058E0B523B070D00030B2CB /* Assets.xcassets in Resources */,
+				1058E0B323B070CA0030B2CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1058E0BA23B070D10030B2CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058E0C523B070D30030B2CB /* Assets.xcassets in Resources */,
+				1058E0C323B070D10030B2CB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1058E0C923B070D30030B2CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058E0D523B070D60030B2CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1058E0A423B070CA0030B2CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058E0B023B070CA0030B2CB /* ViewController.swift in Sources */,
+				1058E0AC23B070CA0030B2CB /* AppDelegate.swift in Sources */,
+				1058E0AE23B070CA0030B2CB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1058E0C723B070D30030B2CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058E0D323B070D30030B2CB /* ExtensionDelegate.swift in Sources */,
+				1058E0D123B070D30030B2CB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1058E0BF23B070D10030B2CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1058E0BB23B070D10030B2CB /* piedraPapelTijera WatchKit App */;
+			targetProxy = 1058E0BE23B070D10030B2CB /* PBXContainerItemProxy */;
+		};
+		1058E0CE23B070D30030B2CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1058E0CA23B070D30030B2CB /* piedraPapelTijera WatchKit Extension */;
+			targetProxy = 1058E0CD23B070D30030B2CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1058E0B123B070CA0030B2CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1058E0B223B070CA0030B2CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1058E0B623B070D00030B2CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1058E0B723B070D00030B2CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1058E0C123B070D10030B2CB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1058E0C223B070D10030B2CB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1058E0D723B070D60030B2CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1058E0D823B070D60030B2CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1058E0DA23B070D60030B2CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				INFOPLIST_FILE = "piedraPapelTijera WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		1058E0DB23B070D60030B2CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				INFOPLIST_FILE = "piedraPapelTijera WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		1058E0DE23B070D60030B2CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				IBSC_MODULE = piedraPapelTijera_WatchKit_Extension;
+				INFOPLIST_FILE = "piedraPapelTijera WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		1058E0DF23B070D60030B2CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				IBSC_MODULE = piedraPapelTijera_WatchKit_Extension;
+				INFOPLIST_FILE = "piedraPapelTijera WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		1058E0E223B070D60030B2CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				INFOPLIST_FILE = piedraPapelTijera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1058E0E323B070D60030B2CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMTQUL7LT8;
+				INFOPLIST_FILE = piedraPapelTijera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo.piedraPapelTijera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1058E0A323B070CA0030B2CB /* Build configuration list for PBXProject "piedraPapelTijera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1058E0D723B070D60030B2CB /* Debug */,
+				1058E0D823B070D60030B2CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1058E0D923B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1058E0DA23B070D60030B2CB /* Debug */,
+				1058E0DB23B070D60030B2CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1058E0DD23B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1058E0DE23B070D60030B2CB /* Debug */,
+				1058E0DF23B070D60030B2CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1058E0E123B070D60030B2CB /* Build configuration list for PBXNativeTarget "piedraPapelTijera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1058E0E223B070D60030B2CB /* Debug */,
+				1058E0E323B070D60030B2CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1058E0A023B070CA0030B2CB /* Project object */;
+}
