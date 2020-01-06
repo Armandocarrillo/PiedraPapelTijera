@@ -16,6 +16,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var rock: WKInterfaceButton!
     @IBOutlet var paper: WKInterfaceButton!
     @IBOutlet var scissors: WKInterfaceButton!
+    @IBOutlet var result: WKInterfaceLabel!
+    
     
     @IBOutlet var levelCounter: WKInterfaceLabel!
     @IBOutlet var timer: WKInterfaceTimer!
@@ -33,6 +35,13 @@ class InterfaceController: WKInterfaceController {
         newLevel()//ejecuta la funcion newlevel
     }
     func newLevel(){
+    if level == 21 {//si es el nivel 21
+        result.setHidden(false)//mostrar label result
+        question.setHidden(true)//oculta imagen
+        answers.setHidden(true)// oculta grupo answers
+        timer.stop()//detiene el timer
+        return
+        }
     levelCounter.setText("\(level)/20")//en el label levelCounter poner el texto "nivel"/20
     if Bool.random() {//booleano aleatorio
     setTitle("Win!")//fija el titulo win
@@ -43,6 +52,16 @@ class InterfaceController: WKInterfaceController {
     }
     allMoves.shuffle()//metodo definido en swift para hacer un aleatorio de nuestro arreglo
     question.setImage(UIImage(named: allMoves[0]))//en el interfaceimage - question- fija la imagen que vino del aleatorio del arreglo allMoves
+    }
+    func check(for answer: String){ //funcion para convertir la respuesta en una cadena
+    if allMoves[0] == answer {//si arreglo allmoves es igual a la respuesta
+    level += 1 //sumara 1 a nivel
+    newLevel() //llama la funcion newlevel
+    } else { //sino
+    level -= 1 //resta un 1 al nivel
+    if level < 1 { level = 1 } // si level es menor a 1, modificar el valor 1 para simpre estar en el nivel 1
+    newLevel()//llama a newlevel
+    }
     }
     
     override func willActivate() {
@@ -56,10 +75,23 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func rockTapped() {
+         if shouldWin {
+        check(for: "scissors")
+         } else {
+        check(for: "paper") }
+
     }
     @IBAction func paperTapped() {
+        if shouldWin {
+        check(for: "rock")
+        } else {
+        check(for: "scissors") }
     }
     @IBAction func scissorsTapped() {
+        if shouldWin {
+        check(for: "paper")
+        } else {
+        check(for: "rock") }
     }
     
 }

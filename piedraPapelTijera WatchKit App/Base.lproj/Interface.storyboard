@@ -11,6 +11,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="piedraPapelTijera_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label alignment="center" hidden="YES" text="YOU WIN!!!!!" id="RZM-zM-qUp">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
                         <imageView width="0.5" height="0.5" alignment="center" id="k0i-kI-FnG"/>
                         <separator alignment="left" id="BUg-gd-dfI"/>
                         <group width="1" height="0.33000000000000002" alignment="left" id="NPj-re-XvH">
@@ -49,6 +52,7 @@
                         <outlet property="levelCounter" destination="2h3-UW-LaM" id="D4H-sg-pO1"/>
                         <outlet property="paper" destination="wvM-Kb-pGu" id="Why-ch-UKw"/>
                         <outlet property="question" destination="k0i-kI-FnG" id="zC2-7n-s3n"/>
+                        <outlet property="result" destination="RZM-zM-qUp" id="zMd-Cn-ZFg"/>
                         <outlet property="rock" destination="T8E-27-Ogi" id="QfW-Yb-dzR"/>
                         <outlet property="scissors" destination="jIq-sb-daE" id="WUk-D6-zmm"/>
                         <outlet property="timer" destination="XPh-Mq-k9u" id="QZK-2X-bSU"/>
