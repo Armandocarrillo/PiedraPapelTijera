@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
@@ -13,10 +13,49 @@
                     <items>
                         <imageView width="0.5" height="0.5" alignment="center" id="k0i-kI-FnG"/>
                         <separator alignment="left" id="BUg-gd-dfI"/>
+                        <group width="1" height="0.33000000000000002" alignment="left" id="NPj-re-XvH">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="T8E-27-Ogi">
+                                    <color key="backgroundColor" red="0.34432668509999997" green="0.30621060989999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="rockTapped" destination="AgC-eL-Hgc" id="BD7-Xx-eKX"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="wvM-Kb-pGu">
+                                    <color key="backgroundColor" red="0.34432668509999997" green="0.30621060989999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="paperTapped" destination="AgC-eL-Hgc" id="mGa-qS-ujA"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="jIq-sb-daE">
+                                    <color key="backgroundColor" red="0.34432668509999997" green="0.30621060989999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="scissorsTapped" destination="AgC-eL-Hgc" id="XY9-ss-UnS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="0.90000000000000002" alignment="center" id="dj1-1G-O8k">
+                            <items>
+                                <label alignment="left" text="1/20" id="2h3-UW-LaM"/>
+                                <timer alignment="right" id="XPh-Mq-k9u">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="answers" destination="NPj-re-XvH" id="2Af-q3-saC"/>
+                        <outlet property="levelCounter" destination="2h3-UW-LaM" id="D4H-sg-pO1"/>
+                        <outlet property="paper" destination="wvM-Kb-pGu" id="Why-ch-UKw"/>
+                        <outlet property="question" destination="k0i-kI-FnG" id="zC2-7n-s3n"/>
+                        <outlet property="rock" destination="T8E-27-Ogi" id="QfW-Yb-dzR"/>
+                        <outlet property="scissors" destination="jIq-sb-daE" id="WUk-D6-zmm"/>
+                        <outlet property="timer" destination="XPh-Mq-k9u" id="QZK-2X-bSU"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="51"/>
+            <point key="canvasLocation" x="34" y="50.848214285714285"/>
         </scene>
     </scenes>
 </document>
